@@ -1,6 +1,9 @@
 # Lactate quantification by NMR in prostate tissue extracts
 
-R code below
+![This is an image](https://github.com/tkcaccia/Figures/Lactate.png)
+
+This is a companion repository to the paper "Cooperation of high-fat diet and MYC oncogenic drive promotes lactate accumulation and immunosuppression to accelerate prostate cancer progression". All code is in R. The raw NMR spectra acquired using a Bruker AVANCE III 500 spectrometr equipped with a 5 mm inverse triple resonance 1H/13C/15N TXI probe and x, y, z gradient coils are provvided in the folder Data.
+
 
 
 ```
