@@ -1,5 +1,9 @@
+# Lactate quantification by NMR in prostate tissue extracts
+
+R code below
 
 
+```
 Working_folder="./Lactate-quantification-by-NMR/"
 Output_address="./Lactate-quantification-by-NMR/Output"
 
@@ -96,4 +100,4 @@ shapiro.test((lactate))
 
 var.test((lactate)[labels=="MYC_CTD"],(lactate)[labels=="MYC_HFD"])
 t.test((lactate)[labels=="MYC_CTD"],(lactate)[labels=="MYC_HFD"], var.equal=TRUE)
-
+```
