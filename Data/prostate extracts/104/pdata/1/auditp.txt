@@ -1,0 +1,27 @@
+##TITLE= Audit trail, TopSpin 4.0.6
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= User
+$$ C:/Users/User/Downloads/TXI_Giorgia_27Sept2021/nmr/104/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2021-09-24 01:02:11.467 +0200>,<nmrsu>,<2UA6060M4C>,<go4>,<TopSpin 3.6.2>,
+      <created by zg
+	started at 2021-09-24 00:03:54.652 +0200,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       53 6C 4A 8E 38 F5 67 BD 5B 7A D1 32 4C AF 2C 97
+       data hash MD5: 54518
+       58 6A 98 78 AE BE 45 44 3F 57 3F 2A 69 FB 0B EC>)
+(   2,<2021-09-27 13:27:29.962 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <Start of raw data processing
+       efp LB = 0.2 FT_mod = 6 PKNL = 1 PHC0 = 146.315 PHC1 = -51.50425 SI = 128K 
+       data hash MD5: 128K
+       B7 C4 22 BA 4A B6 24 94 DF 9A FE 97 BB D1 3F F8>)
+(   3,<2021-09-27 13:32:26.511 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 2 131070 -3.199966e+04 -1.796714e-02 0.000000e+00 0.000000e+00 0.000000e+00 
+       data hash MD5: 128K
+       E4 3F B1 78 5B 13 9A 1B D3 ED 45 8A A3 61 E5 6B>)
+##END=
+
+$$ hash MD5
+$$ 0E 08 AE 71 BC FE 2C 17 82 59 17 F4 8D C6 9C E4

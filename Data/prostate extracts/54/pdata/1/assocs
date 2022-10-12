@@ -1,0 +1,11 @@
+##TITLE= Parameter file, TopSpin 4.1.4
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 2	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2022-10-10 13:49:55.686 +0200  user@user-PPH370
+$$ /media/user/Lion/Documents/Data/Daniela/Giorgia2021/prostate extracts/54/pdata/1/assocs
+$$ process /opt/topspin4.1.4/prog/mod/dataserver
+##$MULTDISP= </media/user/Lion/Documents/Data/Daniela/Giorgia2021/prostate extracts/54/pdata/1234>
+##END=

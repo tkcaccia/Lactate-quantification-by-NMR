@@ -1,0 +1,39 @@
+##TITLE= Audit trail, TopSpin 4.0.6
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= User
+$$ C:/Users/User/Downloads/TXI_Giorgia_27Sept2021/nmr/124/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2021-09-24 10:46:29.376 +0200>,<nmrsu>,<2UA6060M4C>,<go4>,<TopSpin 3.6.2>,
+      <created by zg
+	started at 2021-09-24 09:48:12.543 +0200,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       53 6C 4A 8E 38 F5 67 BD 5B 7A D1 32 4C AF 2C 97
+       data hash MD5: 54518
+       6F 44 DA 93 24 1D 89 04 FB CC 92 B2 1B 68 DF E1>)
+(   2,<2021-09-27 13:27:40.157 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <Start of raw data processing
+       efp LB = 0.2 FT_mod = 6 PKNL = 1 PHC0 = 144.451 PHC1 = -51.1125 SI = 128K 
+       data hash MD5: 128K
+       26 45 BD 97 6F A0 C1 93 62 CF 6C C1 78 F1 B0 43>)
+(   3,<2021-09-27 13:32:54.310 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 2 131070 -7.702082e+04 -5.707209e-02 0.000000e+00 0.000000e+00 0.000000e+00 
+       data hash MD5: 128K
+       F0 9D 88 AF 79 48 C3 A7 AA C9 B0 56 39 E6 EA 2B>)
+(   4,<2021-09-27 14:28:44.344 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 1210 64560 0.000000e+00 0.000000e+00 0.000000e+00 2.381609e-11 -3.047423e-16 
+       data hash MD5: 128K
+       F6 53 48 C8 A9 69 C4 A1 18 E3 05 E5 77 27 00 E0>)
+(   5,<2021-09-27 14:29:09.912 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 56794 8516 0.000000e+00 0.000000e+00 0.000000e+00 0.000000e+00 1.735664e-11 
+       data hash MD5: 128K
+       0F 3C 50 44 C5 5E 7F 10 DA F3 52 B8 E5 01 F2 76>)
+(   6,<2021-09-27 14:29:51.429 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 63740 1533 0.000000e+00 9.518129e+00 1.179266e-01 -4.270054e-05 4.549058e-09 
+       data hash MD5: 128K
+       64 AB C1 46 02 EA AF D4 88 EA A1 AC D6 7B 73 3C>)
+##END=
+
+$$ hash MD5
+$$ C6 44 CB EB CB DA EA 0D D3 CA C1 53 C6 0B 04 30

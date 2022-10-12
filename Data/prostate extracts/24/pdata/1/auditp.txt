@@ -1,0 +1,43 @@
+##TITLE= Audit trail, TopSpin 4.0.6
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= User
+$$ C:/Users/User/Downloads/TXI_Giorgia_27Sept2021/nmr/24/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2021-09-23 10:34:44.383 +0200>,<nmrsu>,<2UA6060M4C>,<go4>,<TopSpin 3.6.2>,
+      <created by zg
+	started at 2021-09-23 09:36:27.436 +0200,
+	POWCHK enabled, PULCHK disabled,
+       configuration hash MD5:
+       53 6C 4A 8E 38 F5 67 BD 5B 7A D1 32 4C AF 2C 97
+       data hash MD5: 54518
+       48 AC 8D E2 71 A7 BF 14 9C FB 7E 5F A2 26 E6 4B>)
+(   2,<2021-09-27 13:26:52.083 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <Start of raw data processing
+       efp LB = 0.2 FT_mod = 6 PKNL = 1 PHC0 = 145.3251 PHC1 = -51.7875 SI = 128K 
+       data hash MD5: 128K
+       F0 4F 18 53 45 6F A4 24 32 BA 4C CF A2 BA 94 03>)
+(   3,<2021-09-27 13:30:19.052 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 0 131054 -5.735708e+04 -5.856013e-02 0.000000e+00 0.000000e+00 0.000000e+00 
+       data hash MD5: 128K
+       38 EA 8D CC B3 61 82 52 A8 6D 20 8D 9E 87 E8 0B>)
+(   4,<2021-09-27 14:21:05.066 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 134 65244 0.000000e+00 0.000000e+00 1.102992e-06 0.000000e+00 0.000000e+00 
+       data hash MD5: 128K
+       1F C4 59 3D 8B C8 AC 5F 18 BC 16 12 B4 DB F4 38>)
+(   5,<2021-09-27 14:26:37.573 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 54685 11004 0.000000e+00 0.000000e+00 0.000000e+00 -4.021647e-09 7.476476e-12 
+       data hash MD5: 128K
+       40 18 51 97 92 65 04 1D 6A B1 B1 D7 FA 2D 91 DA>)
+(   6,<2021-09-27 14:27:16.222 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 62653 2862 0.000000e+00 1.126576e+01 5.783162e-03 4.320769e-06 1.153684e-09 
+       data hash MD5: 128K
+       F3 DF 89 6A 18 B7 2F 99 A6 D7 87 31 B4 C3 57 8E>)
+(   7,<2021-09-27 14:27:44.615 +0200>,<User>,<1831BFE10C43>,<proc1d>,<TopSpin 4.0.6>,
+      <bcm 0 63932 1218 0.000000e+00 5.185297e+01 5.409177e-02 0.000000e+00 0.000000e+00 
+       data hash MD5: 128K
+       E6 40 A0 45 B8 3C 2E 76 F4 7D 06 FA 19 16 EB 5A>)
+##END=
+
+$$ hash MD5
+$$ 99 2E 0C 46 4E 99 A2 D9 DB EB 09 82 B9 A7 28 86
