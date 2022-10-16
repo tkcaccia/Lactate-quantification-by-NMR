@@ -2,11 +2,10 @@
 
 ![This is an image](https://github.com/tkcaccia/Lactate-quantification-by-NMR/blob/main/Figures/Lactate.png)
 
-This is a companion repository to the paper "Cooperation of high-fat diet and MYC oncogenic drive promotes lactate accumulation and immunosuppression to accelerate prostate cancer progression". All code is in R. The raw NMR spectra acquired using a Bruker AVANCE III 500 spectrometer equipped with a 5 mm inverse triple resonance 1H/13C/15N TXI probe and x, y, z gradient coils are provvided in the folder Data.
-
+This is a companion repository to the manuscript “*High-fat diet and MYC cooperation promotes lactate accumulation and tumour microenvironment remodelling in prostate cancer*” by Boufaied N, Chetta P, Hallal T *et al.* The code has been generated to calculate lactate concentration in murine prostate tissues from NMR spectra. The entire code is in R and does not require non-standard hardware or installation. The raw lactate NMR spectra were acquired using a Bruker AVANCE III 500 spectrometer equipped with a 5 mm triple resonance 1H/13C/15N TXI probe and x, y, z gradient coils. Detailed description of NMR experiment and analysis is provided in the main manuscript and supplementary information. Lactate NMR spectra are provided in the folder Data. The expected run time to reproduce data shown in the manuscript is about 5 min.
 
 ## Initialization
-After downloading this GitHub repository, please, follow the script below. In this first section, functions and parameters for the fitting are uploaded in the R environment. Remeber to modify the address of the Working_folder and Output_address.
+After downloading the repository, please follow the script below. Both functions and parameters for the fitting are uploaded in the R environment. Do not forget to modify the address of the Working_folder and Output_address as the following:
 
 ```
 Working_folder="./Lactate-quantification-by-NMR/"
@@ -29,7 +28,7 @@ dir.create(Metabolites_address)
 
 
 ## Data loading
-The NMR spectra in the folder Data are uploaded in the R environment and ordered according the Table S9 in supplementary material.
+The lactate NMR spectra (from the folder Data) are uploaded in the R environment and ordered according to the **Table S9** provided in the Supplementary Material:
 
 ```
 Address=list(Partition=Working_folder,
@@ -59,7 +58,7 @@ addr$n=length(oo)
 
 
 ## Baseline correction
-The baseline of the spectra is corrected.
+Spectra baseline is then corrected:
 
 ```
 i=1
@@ -73,8 +72,7 @@ for(i in i:addr$n){
 ```
 
 ## Fitting of TSP and lactate signals
-In this step, the signal of TSP is quantified and the fitting parameters are provided as output for quality evaluation.
-The signal of lactate is deconvoluted from an unidentified metabolite..
+The signals of sodium trimethylsilyl propionate (TSP) and lactate are quantified and the output of the fitting is saved in the folder defined by the variable `Output_address` for manual inspection. The signal of lactate is deconvoluted from an unidentified metabolite.
 
 ```
 setwd(Working_folder)
@@ -85,28 +83,33 @@ TSP=area_ref
 ```
 
 ## Lactate absolute quantification
-Divide by the number of protons in each signal
-TSP's concentration is 5.804841238 mM
+The goal is to obtain a final absolute lactate concentration in nmol/mg prostate tissue. First you need to divide each signal for the number of protons in each signal and multiply the ratio of lactate/TSP signal for TSP concentration (5.805 mM). Since only a portion of the entire polar phase has been analyzed (here called polar phase analyzed, see methods), the final lactate concentration is then calculated for the entire polar phase (obtained from the entire prostate tissue extraction, see method) and this is then divided for the weight of the prostate tissue. The amount of polar phase analyzed for each samples is saved in the variable `polar_phase_analyzed`. The amount of polar phase for each samples is saved in the variable `Volume_polar_phase`.
 
 ```
 lactate=lactate/3
 TSP=TSP/9
 lactate=5.804841238*lactate/TSP
 
-Volume_selected=c(735,565,400,380,430,606,545,275)
+polar_phase_analyzed=c(735,565,400,380,430,606,545,275)
 Volume_polar_phase=c(1074.1,743.2,575.4,520.3,587.4,791.2,656.9,469.9)
 DLP_weight=c(44.8,31,24,21.7,24.5,33,27.4,19.6)
 
-lactate=(lactate*0.52*Volume_polar_phase/Volume_selected)/DLP_weight
+lactate=(lactate*0.52*Volume_polar_phase/polar_phase_analyzed)/DLP_weight
 lactate=lactate*1000
 ```
 ## Statistical analysis
-shapiro test
+To determine whether a significant difference in lactate concentration is observed between prostate tissues from high-fat diet fed/obese mice and control diet fed mice, a t-test was performed after default confirmation of normality data distribution and equal variance.
 
+### Shapiro-Wilk Normality Test
+```
+shapiro.test((lactate))
+```
+### F Test to Compare Two Variances
 ```
 labels=c("MYC_CTD","MYC_CTD","MYC_CTD","MYC_CTD","MYC_CTD","MYC_HFD","MYC_HFD","MYC_HFD")
-shapiro.test((lactate))
-
 var.test((lactate)[labels=="MYC_CTD"],(lactate)[labels=="MYC_HFD"])
+```
+### Student's t-Test where the pooled variance is used to estimate the variance 
+```
 t.test((lactate)[labels=="MYC_CTD"],(lactate)[labels=="MYC_HFD"], var.equal=TRUE)
 ```
