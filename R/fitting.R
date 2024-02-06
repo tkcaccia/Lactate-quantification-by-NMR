@@ -7,8 +7,8 @@ voigt =   function(A, x, x0, fwhm, eta){
 
 doublet =
   function(x1,height,ppm,fwhm,eta,J,p1=1,p2=1,...){
-    fit=voight(p1*height,x1,ppm-J/2,fwhm,eta)+
-      voight(p2*height,x1,ppm+J/2,fwhm,eta)
+    fit=voigt(p1*height,x1,ppm-J/2,fwhm,eta)+
+      voigt(p2*height,x1,ppm+J/2,fwhm,eta)
     fit
   }
 
