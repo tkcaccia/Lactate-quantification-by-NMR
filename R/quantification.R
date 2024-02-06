@@ -256,6 +256,6 @@ for(k in k:addr$n){
     }
   }
 }
-setwd(origin)
+
 colnames(super_area)=as.vector(rr[,"metabolite"])
 rownames(super_area)=addr$Names
